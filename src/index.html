@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Whiteboard</title>
+        <title>Dverso - Whiteboard</title>
         <meta charset="utf-8" />
-        <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
     </head>
 
     <body style="display: none">
@@ -12,7 +11,21 @@
 
         <!---Toolbar -!-->
         <div id="toolbar" style="position: absolute; top: 10px; left: 10px">
-
+            <div class="btn-group whiteboard-edit-group">
+                
+                <button
+                    tool="pen"
+                    title="Take the pen"
+                    type="button"
+                    class="whiteboard-tool active"
+                >
+                    <i class="fa fa-pencil-alt"></i>
+                </button>
+                
+                <button tool="eraser" title="take the eraser" type="button" class="whiteboard-tool">
+                    <i class="fa fa-eraser"></i>
+                </button>
+            </div>
             <div class="btn-group whiteboard-edit-group">
                 <button style="width: 190px; cursor: default">
                     <div
@@ -61,25 +74,7 @@
            
 
             
-            <div class="btn-group minGroup">
-                <button
-                    style="width: 100%; padding: 11px 11px"
-                    id="minMaxBtn"
-                    title="hide buttons"
-                    type="button"
-                >
-                    <i
-                        id="minBtn"
-                        style="position: relative; left: -5px"
-                        class="fas fa-angle-left"
-                    ></i>
-                    <i
-                        id="maxBtn"
-                        style="position: relative; left: -5px; display: none"
-                        class="fas fa-angle-right"
-                    ></i>
-                </button>
-            </div>
+           
         </div>
 
         <div id="whiteboardInfoContainer">

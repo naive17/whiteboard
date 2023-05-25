@@ -55,11 +55,57 @@ body {
         width: 25px;
     }
 }
-
+#whiteboardColorpicker {
+    height: 23px !important;
+    width: 23px !important;
+    border-radius: 50% !important;
+}
+.activeToolIcon {
+    display: none !important;
+}
 button::-moz-focus-inner {
     border: 0;
 }
-
+.whiteboard-edit-group {
+    margin : 0px !important;
+    background-color: transparent !important;
+    border : none !important;
+}
+button {
+    background-image : none !important;
+    margin-right: 10px !important;
+    background-color: #ededed !important;
+    box-shadow: 0px 4px 30px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    background-color: #bebebe !important;
+}
+.picker_done button {
+    width: 100% !important;
+    margin: 0px !important;
+}
+#whiteboardColorpicker > div {
+    padding: 10px !important;
+    border-radius: 12px !important;
+    margin: 0px !important;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2) !important;
+}
+.picker_arrow {
+    display: none !important;
+}
+.picker_palette {
+    display: none !important;
+}
+button.active {
+    background-color: #bebebe !important;
+}
+.btn-group button {
+    border-radius: 16px !important;
+    border : none !important;
+}
 .whiteboard-edit-group.group-disabled {
     background: repeating-linear-gradient(
         45deg,
