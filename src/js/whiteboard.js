@@ -104,7 +104,6 @@ const whiteboard = {
             .append(_this.imgContainer)
             .append(_this.canvasElement)
             .append(_this.svgContainer)
-            .append(_this.dropIndicator)
             .append(_this.cursorContainer)
             .append(_this.textContainer)
             .append(_this.mouseOverlay);
@@ -878,6 +877,7 @@ const whiteboard = {
         );
     },
     addImgToCanvasByUrl: function (url) {
+        return;
         var _this = this;
         var oldTool = _this.tool;
 
