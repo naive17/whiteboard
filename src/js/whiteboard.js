@@ -16,7 +16,7 @@ const whiteboard = {
     ctx: null,
     drawcolor: "black",
     previousToolHtmlElem: null, // useful for handling read-only mode
-    tool: "mouse",
+    tool: "pen",
     thickness: 4,
     /**
      * @type Point
