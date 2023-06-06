@@ -271,7 +271,12 @@ button {
     opacity: 0;
     transition: all .3s;
 }
-
+@media (hover: none) and (pointer: coarse) {
+    #toolbar {
+        opacity: 1;
+    }
+}
 body:hover #toolbar {
     opacity: 1;
+    
 }
