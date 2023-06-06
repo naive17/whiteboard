@@ -10,6 +10,8 @@ body {
     overflow: hidden;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica,
         Arial, sans-serif;
+    background-color: white !important;
+
 }
 
 #whiteboardContainer {
@@ -263,4 +265,13 @@ button {
 
 .picker_wrapper .picker_splotch.picker_splotch_active {
     border: 2px dotted yellow;
+}
+
+#toolbar {
+    opacity: 0;
+    transition: all .3s;
+}
+
+body:hover #toolbar {
+    opacity: 1;
 }
